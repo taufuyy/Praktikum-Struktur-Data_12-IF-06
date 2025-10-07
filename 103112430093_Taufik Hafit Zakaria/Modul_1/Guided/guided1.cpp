@@ -24,4 +24,5 @@ int main() { //Taufik Hafit Zakaria || 103112430093 || 12-IF-06
         cout << "Hari kerja\n";
         break;
     }
+
 }
