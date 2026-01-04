@@ -75,7 +75,7 @@ void cariService() {
     if (P != Nil) {
         tampilkan_Service(P->info);  
     } else {
-        cout << "Service tidak ditemukan!\n";
+        cout << "\n Service tidak ditemukan!\n";
     }
     pause();  
 }
@@ -314,19 +314,25 @@ void menuService() {
             case 3: hapusService(); break;
             case 4: 
                 clear_Screen();  
-                cout << "=== DAFTAR SERVICE (INORDER) ===\n";
+                cout << "|----------------------------------|\n";
+                cout << "|==== DAFTAR SERVICE (INORDER) ====|\n";
+                cout << "|                                  |\n";
                 show_InOrder(dataService.root);  
                 pause();  
                 break;
             case 5:
                 clear_Screen();  
-                cout << "=== DAFTAR SERVICE (PREORDER) ===\n";
+                cout << "|----------------------------------|\n";
+                cout << "|=== DAFTAR SERVICE (PREORDER) ====|\n";
+                cout << "|                                  |\n";
                 show_PreOrder(dataService.root);  
                 pause();  
                 break;
             case 6:
                 clear_Screen();  
-                cout << "=== DAFTAR SERVICE (POSTORDER) ===\n";
+                cout << "|----------------------------------|\n";
+                cout << "|=== DAFTAR SERVICE (POSTORDER) ===|\n";
+                cout << "|                                  |\n";
                 show_PostOrder(dataService.root);  
                 pause();  
                 break;
@@ -488,10 +494,10 @@ int main() {
             case 3: laporanStatistik(); break;
             case 0: 
                 clear_Screen();  
-                cout << "Terima kasih telah menggunakan sistem ini!\n";
+                cout << "\n======== Terima kasih telah menggunakan sistem ini! ========\n\n";
                 break;
             default:
-                cout << "Pilihan tidak valid! Silakan coba lagi.\n";
+                cout << "\nPilihan tidak valid! Silakan coba lagi.\n";
                 pause();  
         }
     } while(pilihan != 0);

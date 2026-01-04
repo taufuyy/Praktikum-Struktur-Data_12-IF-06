@@ -154,7 +154,7 @@ void insert_BST(BST &T, adrService P) {
         }
         // Jika ID sudah ada (duplikat)
         else {
-            cout << "ID Service sudah ada!\n";
+            cout << "| ERROR: Service dengan ID tersebut sudah ada!\n";
             delete P;
             return;
         }
